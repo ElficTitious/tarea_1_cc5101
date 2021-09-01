@@ -19,10 +19,3 @@ def first_n_harmonic_numbers_generator(n):
     for k in range(1, n):
         sum += 1/k
         yield sum
-
-def euler_constant_approx(n):
-    H_n = 0
-    for k in range(1, n+1):
-        H_n += 1/k
-    return (H_n - np.log(n) - 1/(2*n) + 1/(12*n**2) - 1/(120*n**4) 
-            + 1/(252*n**6))
